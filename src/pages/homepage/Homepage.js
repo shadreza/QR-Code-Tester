@@ -1,12 +1,13 @@
 import React from 'react';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import './Homepage.css';
 // importing the qr module
 import QRCode from "react-qr-code";
 
 const Homepage = () => {
 
-    const [input, setInput] = useState("")
+    const empty = ""
+    const [input, setInput] = useState(empty)
     const [text, setText] = useState(input)
 
     const getCode = () => {
