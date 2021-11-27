@@ -38,6 +38,21 @@
     cursor: pointer;
 }
 
+.download-qr-button {
+    margin-top: 1rem;
+    background-color: #F3950D;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #ccc;
+}
+
+.download-qr-button:hover {
+    cursor: pointer;
+}
+
 .homepage-output-for-qr {
     display: none;
     margin-top: 3%;

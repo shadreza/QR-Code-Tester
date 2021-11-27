@@ -20,6 +20,10 @@ const Homepage = () => {
         }
     }
 
+    const downloadQr = () => {
+        
+    }
+
     const changeInput = (e) => {
         setInput(e.target.value)
         document.getElementById('output-div').style.display="none"
@@ -41,11 +45,15 @@ const Homepage = () => {
                 </button>
             </div>
             <div className="homepage-output-for-qr" id="output-div">
-                <QRCode value= {text} />
+                <QRCode id="result-qr" value= {text} />
                 <br />
                 <p>
                     <small className="small-ending-text">now scan your code!</small>
                 </p>
+                <br />
+                <button className="download-qr-button" onClick={() => {downloadQr()}}>
+                    Download QR
+                </button>
             </div>
         </div>
     );
